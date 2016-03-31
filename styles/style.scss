@@ -100,30 +100,227 @@ body {
  * PACE (automatic pre-loader thingy)
  */
 
-.pace {
-    pointer-events: none;
-    user-select: none;
-    transition: all 1s ease;
-    .pace-progress {
-        background: #2299dd;
-        position: fixed;
-        z-index: 2000;
-        top: 0;
-        right: 100%;
-        width: 100%;
-        height: 2px;
-        transition: all 1s ease;
+img{
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+background-color:rgba(230,230,250, 0.8);
+    font-family: "sans-serif";
+    color: #235166;
+    font-size: 55px;
+    box-sizing: border-box;
+    -webkit-text-stroke: white;
+    height: 100%;
+    width:100%;
+}
+
+
+.bgClip {
+    background:url('paisley.jpg');
+    background-repeat:repeat-x;
+    background-position:0 0;
+    font-size:200px;
+    text-transform:uppercase;
+    text-align:center;
+    font-family:'Luckiest Guy';
+    color:transparent;
+    -webkit-font-smoothing:antialiased;
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+/* Now we just want to add a little animation to make the background more enticing: */
+    -webkit-animation:BackgroundAnimated 15s linear infinite;
+    -moz-animation:BackgroundAnimated 15s linear infinite;
+    -ms-animation:BackgroundAnimated 15s linear infinite;
+    -o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite;
+}
+    @keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
     }
 }
 
-.pace-inactive {
-    opacity: 0;
+
+.detailImage {
+    width: 100%;
+    height: 100%;
 }
 
-.pace-active {
-    opacity: 1;
+.objectTitle  {
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
 }
 
-/**
- * App code
- */
+
+.object  {
+    top: 0;
+    margin-top: 0%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    border-width: 7px;
+    display: inline-block;
+    height: 10%;
+    width: 30%;
+    font-size: 30px;
+    border-style: dotted;
+    border-color: white;
+    background-color: rgba(220,211,193, .5);
+    text-align: center;
+     box-shadow: 10px 10px 5px #888888;
+     vertical-align: top;
+
+}
+
+
+.object:hover  {
+    top: -5px;
+    margin-top: -2%;
+    margin-left: 8.5%;
+    margin-right: 1.5%;
+    margin-bottom: 5%;
+    border-width: 7px;
+    display: inline-block;
+    height: 10%;
+    width: 30%;
+    font-size: 30px;
+    border-style: dotted;
+    border-color: white;
+    background-color: rgba(220,211,193, .5);
+    text-align: center;
+     box-shadow: 25px 25px 25px #888888;
+     vertical-align: top;
+
+}
+
+.detail{
+    text-align: center;
+    margin-left: 2%;
+    color: rgba(220,211,193, 1);
+    margin-top: 2%;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.underlay {
+    width: 100%;
+    background-color:   rgba(230,230,250, 0.8);
+    z-index: 1;
+    margin: 0;
+    padding-top:5%;
+
+}
+.listingContainer {
+    background:url('paisley.jpg');
+    width: 80%;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: white;
+    z-index: 0;
+    padding: 0%;
+    display: block;
+    margin: auto;
+}
+
+
+#title {
+    text-align: center;
+    font-size: 93px;
+    border-width: 5px;
+    border-style: dashed;
+    color: #235166;
+    -webkit-text-stroke: white;
+    font-weight: bold;
+     background-color:  rgba(230,230,250, 0.8);
+    border-color: white;
+   
+    
+}
+
+.detail {
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+}
+.words {
+    vertical-align: top;
+    display: inline-block;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: white;
+    left: 0;
+    width: 17%;
+    margin: 0;
+}
+.words h1{
+
+    display: inline-block;
+    left: 0;
+    margin-left: 0;
+    margin-bottom:0;
+    margin-top: 0;
+    font-size:30px;
+    padding: 0;
+    border-width: 5px;
+    border-style: dashed;
+    color: turquoise;
+    background-color:   rgba(230,230,250, 0.8);
+    border-color: white;
+    -webkit-text-stroke: .9 px black;
+
+}
+
+.image {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: white;
+    padding: 0;
+    margin-left: 10%;
+    vertical-align:top;
+    margin-top: 0;
+    margin-bottom: 4%;
+ 
+}
+
+h2 {
+    margin: 1%;
+    text-align: center;
+    color: turquoise;
+}
+
+
+@media only screen and (max-width: 640px) {
+  
+  .object  {
+    display: block;
+    width: 70%;
+  }
+
+  .object:hover  {
+    display: inline-block;
+    width: 70%;
+
+}
+
+    
+}

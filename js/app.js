@@ -108,6 +108,7 @@ var DetailTitle = React.createClass({
         }
        
         return (
+          <div className ="underlay">
            <div className = "detail"> 
            <div className = "words"> 
            <h1> Price </h1>
@@ -123,6 +124,7 @@ var DetailTitle = React.createClass({
            </div>
            <div className= "image"> 
            <img className= "detailImage" src={imageURL} /> 
+           </div>
            </div>
            </div>
 
